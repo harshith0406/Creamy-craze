@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./checkout.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo/logo-removebg-preview.png">
+</head>
+<body>
+    <div class="container">
+        <div id="Checkout" class="inline">
+            <h1 style="font-size:27px;text-transform:capitalize">Pay Invoice</h1>
+            <div class="card-row">
+                <span class="visa"></span>
+                <span class="mastercard"></span>
+                <span class="amex"></span>
+                <span class="discover"></span>
+            </div>
+            <form action="./process_payment.php" method="post">
+                <div class="form-group">
+                    <label for="PaymentAmount">Payment Details</label>
+                    <div class="amount-placeholder">
+                        <div class="zzz">
+                            <span>Total: <span id="output">₹0</span></span>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>                
+                <div class="form-group"><br>
+                    <label for="NameOnCard">Name on card</label> <br>
+                    <input id="NameOnCard" class="form-control" type="text" maxlength="255"></input>
+                </div>
+                <div class="form-group"><br>
+                    <label for="Email">Email</label> <br>
+                    <input id="Email" class="form-control" type="email" placeholder="example@example.com"></input>
+                </div>
+                <div class="form-group"><br>
+                    <label for="CreditCardNumber">Card number</label> <br>
+                    <input id="CreditCardNumber" class="null card-image form-control" type="text"></input>
+                </div>
+                <div class=" form-group"><br>
+                    <label for="ExpiryDate">Expiry date</label> <br>
+                    <input id="ExpiryDate" class="form-control" type="text" placeholder="MM / YY" maxlength="7"></input>
+                </div>
+                <div class=" form-group"><br>
+                    <label for="SecurityCode">Security code</label>
+                    <div class="input-container" >
+                        <input id="SecurityCode" class="form-control" type="text" ></input>
+                        <i id="cvc" class="fa fa-question-circle"></i>
+                    </div>
+                    <div class="cvc-preview-container two-card hide"><br>
+                        <div class="amex-cvc-preview"></div>
+                        <div class="visa-mc-dis-cvc-preview"></div>
+                    </div>
+                </div>
+                <div class="zip-code-group form-group"><br>
+                    <label for="ZIPCode">ZIP/Postal code</label>
+                    <div class="input-container">
+                        <input id="ZIPCode" class="form-control" type="text" maxlength="10"></input>
+                        <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-placement="left" data-content="Enter the ZIP/Postal code for your credit card billing address."><i class="fa fa-question-circle"></i></a>
+                        <br><br>
+                    </div>
+                </div>
+                <button id="PayButton" class="btn btn-block btn-success submit-button" type="submit">
+                    <span class="submit-button"></span>
+                    <span class="align-middle">Place Order</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="./JS/index.js"></script>
+
+</body>
+</html>

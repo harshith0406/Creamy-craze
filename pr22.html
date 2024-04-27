@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+        <title>Details</title>
+        <link rel="icon" href="./assets/logo/logo-removebg-preview.png" type="image/png" sizes="16x16">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="pstyle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="./style.css">
+      <script src="js/jquery-3.5.1.js"></script>
+      <script src="https://kit.fontawesome.com/953eae4970.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/eac9678171.js" crossorigin="anonymous"></script>
+      <script src="./JS/index.js"></script>  
+    </head>
+</head>
+<body>
+    <header>
+
+        <a href="index.html" class="logo"><img src = "./assets/logo/logo-removebg-preview.png" alt = "TW Logo" /></a>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" ><i class="fas fa-user-plus"></i></a>
+            <a id="openCart" class="openCart" onclick="openingcart()"><i class="fas fa-shopping-cart"></i> </a>
+    </header>
+    
+    <div class="product-container product">
+        <img src="./assets/f-prodimg/other-milk/paneer.jpg" alt="Product Image" class="pchild product-image">
+        <div class="pchild product-info">
+            <h2 class="product-title product-tit">Heritage Lite Paneer</h2>
+            <div class="variant-buttons">
+                <center>
+                    <button id = 'button1' class="variant-button" onclick = "setbutton(this);" value = "₹220">Paneer-L 100g</button>
+                    <button id = 'button2' class="variant-button" onclick = "setbutton(this);" value = "₹425">Paneer-L 200g</button>
+                </center>
+            </div>
+            <p id = "product-price" class="product-price">₹220</p>
+            <button class="add-to-cart-btn" onclick="result(); openingcart()" value="Heritage Buffalo Milk">Add to Cart</button>
+
+        </div>
+        <div class="pchild prod-desc">
+            <p class="product-details">
+                <span class = "subtitle" > Brand: </span> The Heritage Group. <br /> 
+                <span class = "subtitle" > Description: </span> Fresh & pure milk procured from our farmers is processed, homogenized and packed in state-of-the-art processing plants with utmost care to ensure goodness. Heritage Fresh Paneer is uniform and has a pleasing white appearance. It has a mild acidic flavor with a soft, cohesive and compact texture. Vacuum packed in a multilayered film to maintain freshness.<br>
+                <span class = "subtitle" > Packaging: </span> 100gm, 200gm, 500gm, 1kg and 5kg in vacuum packs <br />
+                <span class = "subtitle" > Shelf Life: </span>15 days from the date of packing when stored at 4 C<br />
+            </p>
+        </div>
+        
+    </div>
+    <section class="cart-container" id="cart-container">
+        <div class="cart">
+            <h2>My Cart</h2>
+            <i class="bx bx-x cart__close" id="cart-close" onclick="closingcart()"></i>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <div class="total">
+                <span>Total: <span id="cart-total">₹0</span></span>
+                <a href="./checkout.html" target="_blank" class="pay-button" onclick="checkout()">Pay</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

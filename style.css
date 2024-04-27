@@ -1,0 +1,319 @@
+body {
+  font-size: 16px;
+}
+
+/* Medium-sized screens */
+@media screen and (max-width: 900px) {
+  .mana-font, .nav-font, .product-tit, .font-f, .name, .content, .contenth, .jcontent, .jcontenth {
+    font-size: 18px;
+  }
+
+  .navbar-nav>li.align {
+    padding-left: 20px;
+  }
+
+  .nav-logo, .nav-logo1 {
+    padding-left: 10px;
+  }
+
+  .heading123 {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  .row img, .cwid img {
+    padding: 15px;
+  }
+}
+
+/* Small-sized screens */
+@media screen and (max-width: 600px) {
+  .mana-font, .nav-font, .product-tit, .font-f, .name, .content, .contenth, .jcontent, .jcontenth {
+    font-size: 16px;
+  }
+
+  .navbar-nav>li.align {
+    padding-left: 15px;
+  }
+
+  .nav-logo, .nav-logo1 {
+    padding-left: 5px;
+  }
+
+  .heading123 {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .row img, .cwid img {
+    padding: 10px;
+  }
+}
+
+
+
+.hello p{
+  font-size: 20px;
+}
+.mana-font{
+font-family: 'Caveat', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-size:25px;
+padding-left: 3rem;
+}
+.nav-font{
+font-family: 'Caveat', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-size:18px;
+padding-left: 3rem;
+} 
+.navbar-nav>li.align{
+  padding-left: 30px;
+}
+.navbar-nav > li{
+    padding-left:25px;
+    padding-right:23px;
+}
+.nav-logo{
+    padding-left: 15px;
+    height:60px;
+    width: 90px; 
+}
+
+  .row {
+    display: flex;
+    width:100%;
+    height:100%;
+  }
+  
+  .column {
+    flex: 25%;
+  }
+  .heading123{
+    font-size: 30px;
+    font-weight: normal;
+    padding: 45px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+  }
+  .row img{
+    height:90%;
+    border-radius:50px;
+    padding: 30px;
+  }
+ 
+  .map-container-3{
+    overflow:hidden;
+    padding-bottom:57.25%;
+    position:relative;
+    height: 100px;;
+  }
+  .map-container-3 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+  .content{
+    text-align: center;
+    font-size: 18px;
+  }
+  .contenth{
+    text-align: center;
+    font-size: 20px;
+  }
+  .jcontent{
+    text-align: left;
+    font-size: 20px;
+  }
+  .jcontenth{
+    text-align: left;
+    font-size: 20px;
+  }
+  .alignment{
+    margin:auto;
+  }
+  .abt-txt{
+    padding:20px;
+  }
+  .p-just{
+    text-align: justify;
+    font-size: 20px;
+  }
+  .name{
+    font-family: 'Caveat', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif; 
+  }
+  .s-size{
+    height:70%;
+    width:60%;
+  }
+  .rounded{
+    border-radius: 30px;
+  }
+  .right{
+    padding-left: 15%;
+  }
+  #resize{
+    height:25%;
+    width:25%;
+    border-radius: 50%;
+  }
+  .head{
+    font-size: large;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-left: 130px;
+    font-size: 40px;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 500;
+    color:#6C757D;
+    color:RGB(108, 117, 125);
+  }
+  .sub-head{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align: center;
+    padding-bottom: 3 rem;
+    padding-left: 130px;
+    font-size: 29px;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 500;
+    color:#6C757D;
+    color:RGB(108, 117, 125);
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+  }
+  
+  header .logo {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+  
+  header .logo img {
+    width: 50px;
+  }
+  
+  
+  
+  header .icons i,
+  header .icons a {
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+  }
+  
+  header .icons i:hover,
+  header .icons a:hover {
+    color: #fff;
+    background: var(--red);
+  }
+  
+  header .icons #menu-bars {
+    display: none;
+  }
+  html {
+    background-color:#CAF0F8;
+    background-color:#ffffff;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+  }
+  .tfont{
+    font-size: 28px;
+  }
+  .nav-logo1{
+      height:60px;
+      width: 90px; 
+  }
+  .nav-up{
+    font-family: 'Caveat', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-size:18px;
+  }
+  .nav-up1 li.align{
+   padding-left: 35px;    
+  }
+  .img-responsive {
+    max-width: 90%; /* or to whatever you want here */
+    max-height: auto; /* or to whatever you want here */
+  }
+  .product-tit{
+      font-size: large;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      text-align: center;
+      font-size: 30px;
+      font-style: normal;
+      font-variant-caps: normal;
+      font-variant-east-asian: normal;
+      font-variant-ligatures: normal;
+      font-variant-numeric: normal;
+      font-weight: 500;
+      color:#6C757D;
+      color:RGB(108, 117, 125);
+  }
+  .font-f{
+    font-family: 'Caveat', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+  }
+  .display6 {
+    font-size: calc(2rem + 1.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+.f-font{
+  font-size: 10%;
+}
+.bg-light.py-3.py-md-2.nav-font {
+  margin-top: 50px; /* You can adjust this value based on your needs */
+}
+.tfont p{
+  font-size: 75%;
+}
+.target p{
+  font-size: 75%;
+}
+.cwid img{
+  height:60%;
+}
+.font-fi{
+  font-family: 'Caveat', cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Libre Baskerville', serif;
+}
